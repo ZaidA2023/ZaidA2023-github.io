@@ -1,4 +1,4 @@
-<button style=background-color:lightpink onclick="goBack()">Back</button><br>
+<button style=background-color:lightpink;max-width:50px onclick="goBack()">Back</button><br>
 
 <script>
 function goBack() {
@@ -17,17 +17,35 @@ especially when you get dummy work. Y'know that stuff that they make you do for 
 it I don't even know if I'm going to ever use this again, nonetheless hello and thanks to Mr.Wang.
 </main>
 <style>
-    main.blocktext{
-        margin-left: auto;
-        margin-right:auto;
-        width: 700px;
-    }
     html.blocktext{
         margin-left: auto;
-        margin-right:auto;
-        width: 700px;
+        margin-right: auto;
+        width: 500px;
     }
-</style>
+    br {
+        display: block; 
+        content: ""; 
+        margin-top: 20px; 
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.spacer {
+    flex: 1;
+}
+
+footer {
+    height: 50px;
+    background-color:rgba(0, 0, 0,0);
+}
+
+  </style>
+
 <style>
         br {
         display: block; 
